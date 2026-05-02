@@ -1,6 +1,6 @@
 # RetroDIMM
 
-This is documentation for the RetroDIMM specification. For boards, see [Boards and Designs](#boards-and-designs).
+This page is still a work in progress.
 
 ## Table of Contents
 
@@ -91,13 +91,11 @@ This is documentation for the RetroDIMM specification. For boards, see [Boards a
 | SLEEP | Puts module components into a low power state. High = sleep mode. | Controller | Leave floating | Pull down/Ground |
 | <span style="text-decoration:overline">DOEH</span> & <span style="text-decoration:overline">DOEL</span> | Output enables for bus transceivers. | Controller | Leave floating | Required |
 | <span style="text-decoration:overline">DTACK</span> | Active low signal to complete a bus transaction. | Controller/Module | Leave floating | Pull up |
-| <span style="text-decoration:overline">EXT_DTACK</span> | | Module | Leave floating | Leave floating |
 | <span style="text-decoration:overline">LW</span> & <span style="text-decoration:overline">UW</span> | | Controller |
 | <span style="text-decoration:overline">RAM_SENSE</span> | Identifies the module as RAM | Module |
 | <span style="text-decoration:overline">ROM_SENSE</span> | Identifies the module as ROM | Module |
 | SLEEP | Puts module components into a low power state | Controller | Leave floating | Pull down |
-| <span style="text-decoration:overline">RAM_SIZE[N]</span> | | Module | Leave floating | Leave floating |
-| <span style="text-decoration:overline">RAM_[2/4]CHIP</span> | | Module | Leave floating | Leave floating |
+| <span style="text-decoration:overline">RAM_SIZ[N]</span> | | Module | Leave floating | Leave floating |
 | <span style="text-decoration:overline">RAM_[1/2]WS</span> | Number of wait states when accessing RAM | Module | Leave floating/Pull down | Leave floating |
 | VCC | Supply voltage, typically +5V | Controller | Required | Required |
 | VPP | Future use for programming | Controller | Leave floating | Pull up |
@@ -106,3 +104,11 @@ This is documentation for the RetroDIMM specification. For boards, see [Boards a
 ## Detailed Signal Descriptions
 
 ## Boards and Designs
+
+Board designs are currently in testing.
+
+![](images/portable_pds_1_1.png)
+
+![](images/bga1.png)
+
+![](images/cy1.png)
